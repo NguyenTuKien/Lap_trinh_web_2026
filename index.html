@@ -3,56 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Tu Kien - Portfolio</title>
+    <meta name="description" content="Trang giới thiệu bản thân của Nguyễn Tự Kiên - DevOps/Cloud, Kubernetes, CI/CD." />
+    <title>Nguyễn Tự Kiên | Giới thiệu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">KIEN.DEV</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="#top" aria-label="Về đầu trang">Nguyễn Tự Kiên</a>
+
+            <nav aria-label="Điều hướng chính">
+                <ul class="nav-list">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <a class="header-cta" href="#contact">Nhắn mình</a>
+        </div>
     </header>
 
-    <div class="container">
-        
-        <div class="left-col">
-            <span class="role-tag">Student @ PTIT | B23DCCN465</span>
-            
-            <h1>Xin chào,<br>Mình là Tự Kiên.</h1>
-            
-            <p class="bio">
-                Sinh viên năm cuối đam mê xây dựng hệ thống tự động hóa và hạ tầng Cloud. 
-                Hiện đang tập trung nghiên cứu <b>Kubernetes</b>, <b>CI/CD Automation</b>.
+    <main id="top">
+        <section id="home" class="section hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <div class="pill">B23DCCN465 • CT01</div>
+                    <h1>Xin chào, mình là <span class="accent">Tự Kiên</span>.</h1>
+                    <p class="lead">
+                        Sinh viên năm 3 yêu thích <b>DevOps/Cloud</b>, tập trung vào <b>Kubernetes</b> và <b>CI/CD Automation</b>.
+                        Mục tiêu của mình là xây dựng hạ tầng ổn định, tự động hóa tốt và dễ mở rộng.
+                    </p>
 
-            <div class="skills-summary">
-                Tech Stack: Kubernetes • Docker • Ansible • Jenkins • Huawei Cloud
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">Xem dự án</a>
+                        <a class="btn btn-ghost" href="CV.pdf" target="_blank" rel="noopener">Xem CV</a>
+                    </div>
+
+                    <ul class="meta">
+                        <li><span class="meta-k">Email</span><a href="mailto:KienNT.B23DCCN465@stu.ptit.edu.vn">KienNT.B23DCCN465@stu.ptit.edu.vn</a></li>
+                        <li><span class="meta-k">Quan tâm</span>Cloud • K8s • Automation</li>
+                    </ul>
+                </div>
+
+                <div class="hero-card" aria-label="Ảnh đại diện">
+                    <div class="avatar">
+                        <img src="image.png" alt="Ảnh của Nguyễn Tự Kiên" loading="lazy">
+                    </div>
+                    <div class="hero-card-bottom">
+                        <div class="hero-name">Nguyễn Tự Kiên</div>
+                        <div class="hero-role">DevOps / Cloud Learner</div>
+                        <div class="social">
+                            <a href="#" aria-label="GitHub">GitHub</a>
+                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="cta-group">
-                <a href="#" class="btn btn-primary">Liên hệ ngay</a>
-                <a href="#" class="btn btn-outline">Xem CV</a>
+        <section id="about" class="section">
+            <div class="wrap">
+                <h2>Giới thiệu nhanh</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Mình đang làm gì?</h3>
+                        <p>
+                            Mình thích triển khai dịch vụ theo hướng “hạ tầng như code”, tối ưu pipeline build/deploy,
+                            và học cách quan sát hệ thống (logs/metrics/tracing).
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Điểm mạnh</h3>
+                        <p>
+                            Chủ động học, chịu khó debug, làm việc có checklist. Ưu tiên viết tài liệu ngắn gọn để người khác
+                            có thể chạy lại dự án nhanh.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Mình tìm cơ hội</h3>
+                        <p>
+                            Thực tập/part-time liên quan DevOps, Cloud, Backend infrastructure. Sẵn sàng bắt đầu từ task nhỏ
+                            và học nhanh theo dự án.
+                        </p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <footer>
-                <a href="#" title="GitHub">GH</a>
-                <a href="#" title="LinkedIn">IN</a>
-                <a href="#" title="Facebook">FB</a>
-            </footer>
+        <section id="skills" class="section alt">
+            <div class="wrap">
+                <h2>Kỹ năng / Tech stack</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Git (GitHub/GitLab)</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>CI/CD</h3>
+                        <div class="tags">
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">GitLab CI</span>
+                            <span class="tag">Artifacts</span>
+                            <span class="tag">Release Flow</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Cloud & Scripting</h3>
+                        <div class="tags">
+                            <span class="tag">AWS (basic)</span>
+                            <span class="tag">Huawei Cloud (basic)</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="wrap">
+                <h2>Dự án nổi bật</h2>
+                <p class="muted">Chưa có dự án public? Bạn có thể thay nội dung bên dưới bằng repo/đồ án của bạn.</p>
+
+                <div class="cards">
+                    <article class="card project">
+                        <h3>CI/CD Demo</h3>
+                        <p>Pipeline build → test → deploy tự động, có versioning và rollback cơ bản.</p>
+                        <div class="project-meta">
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                        <a class="link" href="#">Xem chi tiết →</a>
+                    </article>
+                    <article class="card project">
+                        <h3>Kubernetes Lab</h3>
+                        <p>Triển khai service + ingress + config/secret; thử autoscaling và monitoring cơ bản.</p>
+                        <div class="project-meta">
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Ingress</span>
+                            <span class="tag">Observability</span>
+                        </div>
+                        <a class="link" href="#">Xem chi tiết →</a>
+                    </article>
+                    <article class="card project">
+                        <h3>Automation Scripts</h3>
+                        <p>Bash/Python scripts hỗ trợ setup môi trường, chuẩn hóa log, và các tác vụ lặp lại.</p>
+                        <div class="project-meta">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a class="link" href="#">Xem chi tiết →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt">
+            <div class="wrap contact">
+                <div>
+                    <h2>Liên hệ</h2>
+                    <p class="lead">Nếu bạn cần mình hỗ trợ dự án/đồ án hoặc muốn trao đổi cơ hội thực tập, cứ nhắn mình.</p>
+                </div>
+                <div class="contact-card">
+                    <a class="btn btn-primary" href="mailto:KienNT.B23DCCN465@stu.ptit.edu.vn">Gửi email</a>
+                    <a class="btn btn-ghost" href="#home">Về đầu trang</a>
+                    <div class="small muted">Phản hồi nhanh nhất qua email.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="muted">© 2026 Nguyễn Tự Kiên</div>
+            <div class="footer-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
         </div>
-
-        <div class="right-col">
-            <div class="circle-decor"></div>
-            <img class="image-placeholder" src="image.png" alt="Nguyen Tu Kien">
-        </div>
-
-    </div>
+    </footer>
 
 </body>
 </html>
